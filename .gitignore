@@ -1,0 +1,66 @@
+# ==========================================
+# SuiStage Project - Git Ignore
+# ==========================================
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables (IMPORTANT: Never commit!)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# SQLite database (contains user data)
+*.db
+*.db-shm
+*.db-wal
+suistage.db
+backups/*.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Move/Sui specific
+contracts/build/
+contracts/.move/
+Move.lock
+
+# Test coverage
+coverage/
+*.lcov
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Uploaded images/files (if any)
+uploads/
+*.blob
+
+# Sui wallet keys (CRITICAL: Never commit!)
+*.keystore
+*.key
+wallet.json
